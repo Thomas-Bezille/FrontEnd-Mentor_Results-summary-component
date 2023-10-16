@@ -20,6 +20,54 @@
 body {
   font-size: 18px;
   font-family: "Hanken Grotesk", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(
+    var(--bg-light-slate-blue),
+    var(--bg-light-royal-blue)
+  );
+  border-bottom-left-radius: 1.5em;
+  border-bottom-right-radius: 1.5em;
+}
+
+.result--title {
+  color: var(--pale-blue);
+  font-weight: 500;
+  opacity: 80%;
+}
+
+.result--circle {
+  background: linear-gradient(
+    var(--circle-violet-blue),
+    var(--circle-persian-blue)
+  );
+  border-radius: 50%;
+  height: 7em;
+  width: 7em;
+}
+
+.result--circle__note {
+  font-size: 3em;
+  color: white;
+  display: block;
+  text-align: center;
+  font-weight: 800;
 }
 
 .attribution {
