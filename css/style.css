@@ -3,9 +3,13 @@
 :root {
   /* primary */
   --light-red: #ff5757;
+  --light-red20: rgba(255, 87, 87, 0.05);
   --orangey-yellow: #ffb01f;
+  --orangey-yellow20: rgba(255, 176, 31, 0.05);
   --green-teal: #00bd91;
+  --green-teal20: rgba(0, 189, 145, 0.05);
   --cobalt-blue: #1125d4;
+  --cobalt-blue20: rgba(17, 37, 212, 0.05);
   /* gradiant */
   --bg-light-slate-blue: #7957ff;
   --bg-light-royal-blue: #2e2be9;
@@ -98,7 +102,114 @@ p {
   max-width: 70%;
 }
 
+.summary-container {
+  width: 80vw;
+}
+
+.sumary--element-test {
+  margin: 0.8em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.8em;
+  border-radius: 0.6em;
+}
+
+.summary--element-test__title {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.summary--title {
+  color: var(--dark-gray-blue);
+  opacity: 85%;
+  margin: 1.2em 0;
+  font-weight: 800;
+}
+
+.red {
+  background: var(--light-red20);
+}
+
+.red .summary--element-test__title span {
+  color: var(--light-red);
+}
+
+.yellow {
+  background: var(--orangey-yellow20);
+}
+
+.yellow .summary--element-test__title span {
+  color: var(--orangey-yellow);
+}
+
+.green {
+  background: var(--green-teal20);
+}
+
+.green .summary--element-test__title span {
+  color: var(--green-teal);
+}
+
+.blue {
+  background: var(--cobalt-blue20);
+}
+
+.blue .summary--element-test__title span {
+  color: var(--cobalt-blue);
+}
+
+.note-value {
+  color: var(--dark-gray-blue);
+  font-weight: 700;
+}
+
+.note-max {
+  color: var(--dark-gray-blue);
+  opacity: 50%;
+  font-weight: 700;
+}
+
+.note-value,
+.note-max {
+  font-size: 0.9em;
+  margin-right: 0.3em;
+  font-weight: 800;
+}
+
+.icon {
+  margin: 0.8em;
+}
+
+button {
+  width: 100%;
+  background: var(--dark-gray-blue);
+  color: white;
+  border: none;
+  height: 50.3px;
+  border-radius: 3.5em;
+  font-weight: 800;
+  font-size: 0.8em;
+}
+
+button:hover {
+  background: linear-gradient(
+    var(--bg-light-slate-blue),
+    var(--bg-light-royal-blue)
+  );
+}
+
+button:active {
+  background: linear-gradient(
+    var(--bg-light-slate-blue),
+    var(--bg-light-royal-blue)
+  );
+}
+
 .attribution {
+  margin: 1em 0 0.5em 0;
   font-size: 11px;
   text-align: center;
 }
