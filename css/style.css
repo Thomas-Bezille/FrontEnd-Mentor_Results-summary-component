@@ -7,7 +7,7 @@
   --green-teal: #00bd91;
   --cobalt-blue: #1125d4;
   /* gradiant */
-  --bg-light-slate-blue: #7857ff;
+  --bg-light-slate-blue: #7957ff;
   --bg-light-royal-blue: #2e2be9;
   --circle-violet-blue: #4e21ca;
   --circle-persian-blue: #2421ca00;
@@ -23,6 +23,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+p {
+  margin: 0;
 }
 
 #container {
@@ -47,9 +51,10 @@ body {
 }
 
 .result--title {
+  margin: 1.2em 0;
   color: var(--pale-blue);
-  font-weight: 500;
-  opacity: 80%;
+  font-weight: 700;
+  opacity: 70%;
 }
 
 .result--circle {
@@ -68,6 +73,29 @@ body {
   display: block;
   text-align: center;
   font-weight: 800;
+  margin-top: 0.5em;
+  line-height: 1em;
+}
+
+.result--circle__note-max {
+  color: var(--pale-blue);
+  opacity: 50%;
+  font-size: 0.9em;
+}
+
+.result--commentaire {
+  margin: 1em 0 0.3em 0;
+  color: white;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.result--compare {
+  margin-bottom: 2.5em;
+  color: var(--pale-blue);
+  opacity: 80%;
+  font-size: 0.8em;
+  max-width: 70%;
 }
 
 .attribution {
