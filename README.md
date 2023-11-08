@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Github](https://github.com/Thomas-Bezille/FrontEnd-Mentor_Results-summary-component)
+- [Live](https://front-end-mentor-results-summary-component-lime.vercel.app/)
 
 ## My process
 
