@@ -34,13 +34,16 @@ p {
 }
 
 #container {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 #result {
+  /* height: 100%; */
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,12 +105,32 @@ p {
   max-width: 70%;
 }
 
+#summary {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .summary-container {
-  width: 80vw;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1.5em 0;
+}
+
+.summary--conatiner__elem {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .sumary--element-test {
-  margin: 0.8em 0;
+  /* margin: 1.5em 0; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -125,7 +148,7 @@ p {
 .summary--title {
   color: var(--dark-gray-blue);
   opacity: 85%;
-  margin: 1.2em 0;
+  /* margin: 1.2em 0; */
   font-weight: 800;
 }
 
@@ -199,9 +222,6 @@ button:hover {
     var(--bg-light-slate-blue),
     var(--bg-light-royal-blue)
   );
-}
-
-button:active {
   background: linear-gradient(
     var(--bg-light-slate-blue),
     var(--bg-light-royal-blue)
@@ -209,10 +229,42 @@ button:active {
 }
 
 .attribution {
-  margin: 1em 0 0.5em 0;
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1100px) {
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #container {
+    flex-direction: row;
+    width: 50%;
+    height: 50%;
+    box-shadow: 5px 10px 30px 1px var(--pale-blue);
+    border-radius: 1.5em;
+  }
+  #result {
+    width: 50%;
+    height: 100%;
+    border-radius: 1.5em;
+  }
+  #summary {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .attribution {
+    display: block;
+  }
 }
